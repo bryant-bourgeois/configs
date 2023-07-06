@@ -1,1 +1,3 @@
 # configs
+
+dotfiles: vimrc, zshrc
