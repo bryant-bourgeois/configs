@@ -1,0 +1,85 @@
+{
+  "glassit.alpha": 220,
+  "editor.formatOnSave": true,
+  "eslint.format.enable": true,
+  "eslint.run": "onSave",
+  "editor.defaultFormatter": "ms-python.black-formatter",
+  "editor.minimap.enabled": false,
+  "vim.vimrc.enable": true,
+  "editor.fontSize": 17,
+  "editor.lineNumbers": "relative",
+  "window.zoomLevel": 1,
+  "editor.renderWhitespace": "none",
+  "editor.renderControlCharacters": false,
+  "vim.leader": " ",
+  "vim.normalModeKeyBindingsNonRecursive": [
+    //Switch Tabs
+    {
+      "before": ["S-h"], "commands": [":bprevious"]
+    },
+    {
+      "before": ["S-l"], "commands": [":bnext"]
+    },
+    //Splits
+    {
+      "before": ["leader", "|"], "commands": [":vsplit"]
+    },
+    {
+      "before": ["leader", "-"], "commands": [":split"]
+    },
+    //Pane Navigation
+    {
+      "before": ["leader", "h"],
+      "commands": ["workbench.action.focusLeftGroup"]
+    },
+    {
+      "before": ["leader", "j"],
+      "commands": ["workbench.action.focusBelowGroup"]
+    },
+    {
+      "before": ["leader", "k"],
+      "commands": ["workbench.action.focusAboveGroup"]
+    },
+    {
+      "before": ["leader", "l"],
+      "commands": ["workbench.action.focusRightGroup"]
+    },
+  ],
+  "vim.normalModeKeyBindings": [
+    {
+      "before": ["<leader>", "a"],
+      "commands": ["vscode-harpoon.addEditor"]
+    },
+    {
+      "before": ["<leader>", "e"],
+      "commands": ["vscode-harpoon.editEditors"]
+    },
+    {
+      "before": ["<leader>", "p", "e"],
+      "commands": ["vscode-harpoon.editorQuickPick"]
+    },
+    {
+      "before": ["<leader>", "1"],
+      "commands": ["vscode-harpoon.gotoEditor1"]
+    },
+    {
+      "before": ["<leader>", "2"],
+      "commands": ["vscode-harpoon.gotoEditor2"]
+    },
+    {
+      "before": ["<leader>", "3"],
+      "commands": ["vscode-harpoon.gotoEditor3"]
+    },
+    {
+      "before": ["<leader>", "4"],
+      "commands": ["vscode-harpoon.gotoEditor4"]
+    }
+  ],
+  "aws.telemetry": false,
+  "editor.fontFamily": "\"JetBrains Mono\"",
+  "python.formatting.provider": "black",
+  "redhat.telemetry.enabled": false,
+  "workbench.colorTheme": "Catppuccin Mocha",
+  "workbench.activityBar.visible": false,
+  "window.titleBarStyle": "custom"
+}
