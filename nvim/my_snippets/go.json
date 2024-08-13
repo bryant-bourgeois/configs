@@ -1,0 +1,10 @@
+{
+	"snip1": {
+		"prefix": "iferr",
+		"body": [
+			"if err != nil {",
+			"",
+			"}"
+		]
+	}
+}
