@@ -1,0 +1,14 @@
+set number
+set relativenumber
+set showmode
+set showcmd
+set scrolloff=8
+
+nnoremap <C-d> <C-d>zz
+nnoremap <C-u> <C-u>zz
+nnoremap n nzzzv
+nnoremap N Nzzzv
+nnoremap <C-a> GVgg
+
+Plug 'machakann/vim-highlightedyank'
+let g:highlightedyank_highlight_color = "rgba(0, 165, 247, 180)"
