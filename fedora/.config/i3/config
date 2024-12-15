@@ -98,7 +98,7 @@ bindsym $mod+| split v
 bindsym $mod+f fullscreen toggle
 
 # change container layout (stacked, tabbed, toggle split)
-bindsym $mod+shift+s layout stacking
+bindsym $mod+s layout stacking
 bindsym $mod+w layout tabbed
 bindsym $mod+e layout toggle split
 
@@ -166,10 +166,10 @@ mode "resize" {
         # Pressing right will grow the window’s width.
         # Pressing up will shrink the window’s height.
         # Pressing down will grow the window’s height.
-        bindsym j resize shrink width 10 px or 10 ppt
-        bindsym k resize grow height 10 px or 10 ppt
-        bindsym l resize shrink height 10 px or 10 ppt
-        bindsym semicolon resize grow width 10 px or 10 ppt
+        bindsym h resize shrink width 10 px or 10 ppt
+        bindsym j resize grow height 10 px or 10 ppt
+        bindsym k resize shrink height 10 px or 10 ppt
+        bindsym l resize grow width 10 px or 10 ppt
 
         # same bindings, but for the arrow keys
         bindsym Left resize shrink width 10 px or 10 ppt
@@ -189,9 +189,17 @@ gaps outer 5
 
 default_border none
 
+# class                 border  backgr. text    indicator child_border
+client.focused          #232136 #44415a #ea9a97 #2e9ef4   #232136
+client.focused_inactive #f6c177 #232136 #ea9a97 #2e9ef4   #232136
+client.unfocused        #232136 #232136 #e0def4 #2e9ef4   #232136
+client.urgent           #2f343a #900000 #ffffff #900000   #900000
+client.placeholder      #000000 #0c0c0c #ffffff #000000   #0c0c0c
+
+client.background       #ffffff
+
 bindsym $mod+space exec rofi -dpi 192 -show drun
 # bindsym $mod+i exec /opt/idea-IU-242.23339.11/bin/idea
-# bindsym $mod+s exec flatpak run com.spotify.Client
 bindsym $mod+x exec betterlockscreen -l dim
 exec --no-startup-id picom
 exec xinput set-prop 'PIXA3854:00 093A:0274 Touchpad' 'libinput Tapping Enabled' 1
