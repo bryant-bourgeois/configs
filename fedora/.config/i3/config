@@ -51,7 +51,8 @@ floating_modifier $mod
 tiling_drag modifier titlebar
 
 # start a terminal
-bindsym $mod+Return exec kitty
+# bindsym $mod+Return exec kitty
+bindsym $mod+Return exec /home/bryantbourgeois/.local/bin/ghostty
 
 # kill focused window
 bindsym $mod+q kill
@@ -202,6 +203,7 @@ bindsym $mod+space exec rofi -dpi 192 -show drun
 # bindsym $mod+i exec /opt/idea-IU-242.23339.11/bin/idea
 bindsym $mod+x exec betterlockscreen -l dim
 exec --no-startup-id picom
+exec --no-startup-id nm-applet
 exec xinput set-prop 'PIXA3854:00 093A:0274 Touchpad' 'libinput Tapping Enabled' 1
 exec_always feh --bg-fill ~/wallpapers/wallpapers/city-hill.jpg
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
