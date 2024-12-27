@@ -1,0 +1,11 @@
+font-family = Jetbrains Mono
+font-size = 14 
+cursor-style = block_hollow
+cursor-style-blink = true
+shell-integration-features = no-cursor
+theme = rose-pine-moon
+window-padding-x = 10
+window-padding-y = 10
+window-decoration = false
+title = " "
+background-opacity = 0.9
