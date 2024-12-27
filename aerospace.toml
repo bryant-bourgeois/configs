@@ -112,7 +112,6 @@ cmd-5 = 'workspace 5'
 cmd-6 = 'workspace 6'
 cmd-7 = 'workspace 7'
 cmd-8 = 'workspace 8'
-cmd-9 = 'workspace 9'
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#move-node-to-workspace
 cmd-shift-1 = 'move-node-to-workspace 1'
@@ -123,7 +122,6 @@ cmd-shift-5 = 'move-node-to-workspace 5'
 cmd-shift-6 = 'move-node-to-workspace 6'
 cmd-shift-7 = 'move-node-to-workspace 7'
 cmd-shift-8 = 'move-node-to-workspace 8'
-cmd-shift-9 = 'move-node-to-workspace 9'
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#workspace-back-and-forth
 alt-tab = 'workspace-back-and-forth'
@@ -150,7 +148,7 @@ alt-shift-l = ['join-with right', 'mode main']
 
 
 [[on-window-detected]]
-if.app-id = 'com.vivaldi.Vivaldi'
+if.app-id = 'com.google.Chrome'
 run = 'move-node-to-workspace 1'
 
 [[on-window-detected]]
@@ -158,8 +156,16 @@ if.app-id = 'net.kovidgoyal.kitty'
 run = 'move-node-to-workspace 2'
 
 [[on-window-detected]]
-if.app-id = 'com.microsoft.VSCode'
+if.app-id = 'com.mitchellh.ghostty'
+run = 'move-node-to-workspace 2'
+
+[[on-window-detected]]
+if.app-id = 'com.tinyspeck.slackmacgap'
 run = 'move-node-to-workspace 3'
+
+[[on-window-detected]]
+if.app-id = 'com.microsoft.VSCode'
+run = 'move-node-to-workspace 4'
 
 [[on-window-detected]]
 if.app-id = 'com.electron.dockerdesktop'
@@ -174,17 +180,10 @@ if.app-id = 'com.hnc.Discord'
 run = 'move-node-to-workspace 5'
 
 [[on-window-detected]]
-if.app-id = 'com.apple.MobileSMS'
+if.app-id = 'us.zoom.xos'
 run = 'move-node-to-workspace 6'
 
 [[on-window-detected]]
 if.app-id = 'com.apple.mail'
 run = 'move-node-to-workspace 6'
 
-[[on-window-detected]]
-if.app-id = 'aerospace.md'
-run = 'move-node-to-workspace 4'
-
-[[on-window-detected]]
-if.app-id = 'company.thebrowser.Browser'
-run = 'move-node-to-workspace 1'
