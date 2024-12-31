@@ -1,4 +1,4 @@
 schema-version: v2.2
-dd-service: app2
+dd-service: app1
 team: infra
 type: web
