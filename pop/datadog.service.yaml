@@ -1,7 +1,7 @@
 schema-version: v2.2
 dd-service: shopping-cart-2
 team: foo
-application: shopping-app
+application: shopping-app-foo
 tier: "1"
 type: web
 languages:

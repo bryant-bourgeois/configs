@@ -1,7 +1,7 @@
 schema-version: v2.2
 dd-service: shopping-cart
-team: e-commerce
-application: shopping-app
+team: infra
+application: shopping-app-infra
 tier: "1"
 type: web
 languages:
