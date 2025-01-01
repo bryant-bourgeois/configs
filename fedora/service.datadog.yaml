@@ -1,4 +1,5 @@
-schema-version: v2.2
-dd-service: app1
-team: infra
-type: web
+apiVersion: v3
+kind: service
+metadata:
+  name: app1
+  owner: foo
