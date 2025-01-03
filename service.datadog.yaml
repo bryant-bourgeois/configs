@@ -9,4 +9,4 @@ metadata:
     - name: Support Slack
       type: slack
       contact: https://www.slack.com/archives/shopping-cart
-  owner: foo
+  owner: infra
