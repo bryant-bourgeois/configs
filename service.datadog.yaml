@@ -1,0 +1,12 @@
+apiVersion: v3
+kind: service
+metadata:
+  name: myapp
+  contacts:
+    - name: Support Email
+      type: email
+      contact: team@shopping.com
+    - name: Support Slack
+      type: slack
+      contact: https://www.slack.com/archives/shopping-cart
+  owner: infra

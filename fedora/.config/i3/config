@@ -52,7 +52,7 @@ tiling_drag modifier titlebar
 
 # start a terminal
 # bindsym $mod+Return exec kitty
-bindsym $mod+Return exec /home/bryantbourgeois/.local/bin/ghostty
+bindsym $mod+Return exec /usr/bin/ghostty
 
 # kill focused window
 bindsym $mod+q kill
