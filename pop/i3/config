@@ -109,7 +109,7 @@ bindsym $mod+e layout toggle split
 #bindsym $mod+space focus mode_toggle
 
 # focus the parent container
-bindsym $mod+a focus parent
+# bindsym $mod+a focus parent
 
 # focus the child container
 #bindsym $mod+d focus child
@@ -198,12 +198,14 @@ client.placeholder      #000000 #0c0c0c #ffffff #000000   #0c0c0c
 
 client.background       #ffffff
 
-bindsym $mod+space exec rofi -dpi 192 -show drun
+# bindsym $mod+space exec rofi -dpi 192 -show drun
+bindsym $mod+a exec rofi -show drun
 bindsym $mod+x exec betterlockscreen -l dim
+bindsym $mod+Shift+x exec flameshot gui
 exec --no-startup-id picom
 exec xinput set-prop 'ELAN0412:00 04F3:316F Touchpad' 'libinput Tapping Enabled' 1
 exec xrandr --output HDMI-1-0 --mode 2560x1440
-
+exec --no-startup-id nm-applet
 exec_always feh --bg-fill ~/wallpapers/city-hill.jpg
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 exec_always setxkbmap -option ctrl:nocaps
