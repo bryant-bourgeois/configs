@@ -118,6 +118,7 @@ alias gitlazy="git add -A && git commit -m 'lazy commit message' && git push"
 alias ls=lsd
 alias k=kubectl
 alias cat=batcat
+alias tf=terraform
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh

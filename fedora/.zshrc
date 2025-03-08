@@ -136,6 +136,7 @@ alias gitlazy="git add -A && git commit -m 'lazy commit message' && git push"
 alias ls=lsd
 alias k=kubectl
 alias cat=bat
+alias tf=terraform
 
 #locksceen path addition
 export PATH="$PATH:/home/$USER/.local/bin"
